@@ -1,0 +1,27 @@
+{
+  "name": "generate-unique-id",
+  "version": "1.0.0",
+  "description": "Generate a unique random ID string.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "generate",
+    "create",
+    "unique",
+    "random",
+    "id",
+    "serial",
+    "string"
+  ],
+  "author": {
+    "name": "steve-232",
+    "email": "steve232np@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/steve-232/generate-unique-id"
+  },
+  "license": "MIT"
+}
