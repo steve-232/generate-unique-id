@@ -1,10 +1,10 @@
 {
   "name": "generate-unique-id",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Generate a unique random ID string.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "console": "node -e 'console.log(require(\"./index\")())'"
   },
   "keywords": [
     "generate",

@@ -11,16 +11,16 @@ npm install generate-unique-id --save
 const generateUniqueId = require('generate-unique-id');
 
 // example 1
-const id = generateUniqueId.init();
+const id = generateUniqueId();
 
 // example 2
-const id = generateUniqueId.init({
+const id = generateUniqueId({
   length: 32,
   useLetters: false
 });
 
 // example 3
-const id = generateUniqueId.init({
+const id = generateUniqueId({
   includeSymbols: ['@','#','|'],
   excludeSymbols: ['0']
 });
