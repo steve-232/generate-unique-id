@@ -1,51 +1,51 @@
-'use strict';
+'use strict'
 
-function generateUniqueId({
-  length = 10,
+function generateUniqueId ({
+  length = 20,
   useLetters = true,
   useNumbers = true,
   includeSymbols = [],
   excludeSymbols = []
-  } = {}) {
-  let letters = 'abcdefghijklmnopqrstuvwxyz';
-  let numbers = '0123456789';
-  let availableChars = [];
-  let lettersArr = [];
-  let numbersArr = [];
+} = {}) {
+  let letters = 'abcdefghijklmnopqrstuvwxyz'
+  let numbers = '0123456789'
+  let availableChars = []
+  let lettersArr = []
+  let numbersArr = []
 
   if (useLetters) {
-    if (excludeSymbols.length) letters = filterSymbols(excludeSymbols, letters);
-    lettersArr = letters.split('');
+    if (excludeSymbols.length) letters = filterSymbols(excludeSymbols, letters)
+    lettersArr = letters.split('')
   }
 
   if (useNumbers) {
-    if (excludeSymbols.length) numbers = filterSymbols(excludeSymbols, numbers);
-    numbersArr = numbers.split('');
+    if (excludeSymbols.length) numbers = filterSymbols(excludeSymbols, numbers)
+    numbersArr = numbers.split('')
   }
 
-  availableChars = [...lettersArr, ...numbersArr, ...includeSymbols];
+  availableChars = [...lettersArr, ...numbersArr, ...includeSymbols]
 
-  return createId(availableChars, length);
+  return createId(availableChars, length)
 }
 
 function createId (availableChars, idLength) {
-  let id = '';
+  let id = ''
 
-  for (let i = 0; i < idLength; i++){
-    id += availableChars[getRandomNumber(availableChars.length)];
-  };
+  for (let i = 0; i < idLength; i++) {
+    id += availableChars[getRandomNumber(availableChars.length)]
+  }
 
-  return id;
+  return id
 }
 
 function filterSymbols (excludeSymbols, group) {
-  excludeSymbols.forEach(symbol => group = group.replace(symbol, ''));
+  excludeSymbols.forEach(symbol => (group = group.replace(symbol, '')))
 
   return group
 }
 
 function getRandomNumber (limit) {
-  return Math.floor(Math.random()*limit).toString();
+  return Math.floor(Math.random() * limit).toString()
 }
 
-module.exports = generateUniqueId;
+module.exports = generateUniqueId
