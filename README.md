@@ -7,7 +7,7 @@ npm install generate-unique-id --save
 ```
 
 ## Usage
-```html
+```js
 const generateUniqueId = require('generate-unique-id');
 
 // example 1
