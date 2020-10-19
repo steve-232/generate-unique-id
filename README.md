@@ -2,8 +2,13 @@
 Generate a unique random ID string.
 
 ## Installation
-```html
+```js
 npm install generate-unique-id --save
+```
+or
+
+```html
+<script src="path/to/the/file/generateUniqueId.js"></script>e
 ```
 
 ## Usage
