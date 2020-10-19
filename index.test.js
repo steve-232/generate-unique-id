@@ -1,33 +1,33 @@
-const generateUniqueID = require('./index');
+const generateUniqueId = require('./index');
 
 test('default behavior', () => {
-  const id1 = generateUniqueID();
-  const id2 = generateUniqueID();
+  const id1 = generateUniqueId();
+  const id2 = generateUniqueId();
 
   expect(id1.length).toBe(20);
   expect(id1).not.toMatch(id2);
 });
 
 test('use only letters', () => {
-  const id = generateUniqueID({ useNumbers: false, length: 50 });
+  const id = generateUniqueId({ useNumbers: false, length: 50 });
 
   expect(id.match(/[0-9]/g)).toBe(null);
   expect(id.length).toBe(50);
 });
 
 test('use only numbers', () => {
-  const id = generateUniqueID({ useLetters: false, length: 30 });
+  const id = generateUniqueId({ useLetters: false, length: 30 });
 
   expect(id.match(/[a-z]/g)).toBe(null);
   expect(id.length).toBe(30);
 });
 
 test('include symbols', () => {
-  let id = generateUniqueID({ includeSymbols: ['@', '#'], length: 100 });
+  let id = generateUniqueId({ includeSymbols: ['@', '#'], length: 100 });
 
   expect(((/(@|#)/g)).test(id)).toBe(true);
 
-  id = generateUniqueID({
+  id = generateUniqueId({
     includeSymbols: ['@', '#'], length: 10, useLetters: false, useNumbers: false,
   });
 
@@ -38,7 +38,7 @@ test('include symbols', () => {
 });
 
 test('exclude symbols', () => {
-  const id = generateUniqueID({ useLetters: false, excludeSymbols: ['0', '1', '2', '3', '4', '5'] });
+  const id = generateUniqueId({ useLetters: false, excludeSymbols: ['0', '1', '2', '3', '4', '5'] });
 
   expect(id.match(/[0-5]/g)).toBe(null);
 });
