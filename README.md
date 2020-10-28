@@ -1,6 +1,5 @@
 # Generate Unique ID
-Generate a unique random ID string.
-
+Generate a unique random ID string. GUI demo could be found [here](https://steve-232.github.io/generate-unique-id/).
 ## Installation
 ```js
 npm install generate-unique-id --save
@@ -8,7 +7,7 @@ npm install generate-unique-id --save
 or
 
 ```html
-<script src="path/to/the/file/generateUniqueId.js"></script>e
+<script src="path/to/the/file/generateUniqueId.js"></script>
 ```
 
 ## Usage
@@ -41,7 +40,7 @@ const id = generateUniqueId({
   </tr>
   <tr>
     <td>length</td>
-    <td>string</td>
+    <td>number</td>
     <td>20</td>
     <td>Length of the generated ID.</td>
   </tr>
