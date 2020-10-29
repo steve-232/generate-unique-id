@@ -1,6 +1,12 @@
 html, body {
   height: 100%;
 }
+a {
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
 .wrapper {
   display: flex;
   height: 100%;
@@ -59,13 +65,19 @@ html, body {
   color: #616161;
   white-space: pre-wrap;
 }
+.git {
+  align-self: center;
+  margin-bottom: 26px;
+  color: #000;
+  opacity: .3;
+}
 #copy-code-btn {
   margin-top: 10px;
   align-self: center;
 }
 .settings-panel {
   display: flex;
-  padding: 60px 20px;
+  padding: 50px 20px;
   justify-content: center;
   background-color: #fff;
   box-shadow: 0 -2px 20px rgba(0,0,0,.15);
@@ -74,9 +86,11 @@ html, body {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 .input-cell {
   display: flex;
+  margin: 5px 0;
   padding: 0 10px;
   align-items: baseline;
 }
