@@ -1,3 +1,4 @@
+// Only for classic HTML pages!!!
 // eslint-disable-next-line no-unused-vars
 function generateUniqueId({
   length = 20,
