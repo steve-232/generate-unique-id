@@ -1,6 +1,6 @@
 {
   "name": "generate-unique-id",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Generate a unique random ID string.",
   "main": "index.js",
   "scripts": {
