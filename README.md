@@ -1,11 +1,17 @@
 # Generate Unique ID
-Generate a unique random ID string. GUI demo could be found [here](https://steve-232.github.io/generate-unique-id/).
+Generate a unique random ID string. GUI demo can be found [here](https://steve-232.github.io/generate-unique-id/).
 ## Installation
+Using npm:
 ```js
-npm install generate-unique-id --save
+npm i generate-unique-id
 ```
-or
 
+Using yarn:
+```js
+yarn add generate-unique-id
+```
+
+Using classic "src"
 ```html
 <script src="path/to/the/file/generateUniqueId.js"></script>
 ```
@@ -15,16 +21,16 @@ or
 const generateUniqueId = require('generate-unique-id');
 
 // example 1
-const id = generateUniqueId();
+const id1 = generateUniqueId();
 
 // example 2
-const id = generateUniqueId({
+const id2 = generateUniqueId({
   length: 32,
   useLetters: false
 });
 
 // example 3
-const id = generateUniqueId({
+const id3 = generateUniqueId({
   includeSymbols: ['@','#','|'],
   excludeSymbols: ['0']
 });
