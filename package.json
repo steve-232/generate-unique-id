@@ -1,36 +1,37 @@
 {
-  "name": "generate-unique-id",
-  "version": "2.0.3",
-  "description": "Generate a unique random ID string.",
-  "main": "index.js",
-  "scripts": {
-    "console": "node -e 'console.log(require(\"./index\")())'",
-    "test": "jest",
-    "test:watch": "jest --watch"
-  },
-  "keywords": [
-    "generate",
-    "create",
-    "unique",
-    "random",
-    "id",
-    "serial",
-    "string"
-  ],
-  "author": {
-    "name": "steve-232",
-    "email": "steve232np@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/steve-232/generate-unique-id"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "eslint": "^7.11.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.1.0",
-    "jest": "^30.2.0"
-  }
+	"name": "generate-unique-id",
+	"version": "2.0.3",
+	"description": "Generate a unique random ID string.",
+	"main": "index.js",
+	"scripts": {
+		"console": "node -e 'console.log(require(\"./index\")())'",
+		"test": "jest",
+		"test:watch": "jest --watch",
+		"lint": "eslint ."
+	},
+	"keywords": [
+		"generate",
+		"create",
+		"unique",
+		"random",
+		"id",
+		"serial",
+		"string"
+	],
+	"author": {
+		"name": "steve-232",
+		"email": "steve232np@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/steve-232/generate-unique-id"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@eslint/js": "^9.39.2",
+		"eslint": "^9.39.2",
+		"eslint-plugin-jest": "^29.12.1",
+		"globals": "^17.2.0",
+		"jest": "^30.2.0"
+	}
 }
