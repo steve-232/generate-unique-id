@@ -3,6 +3,7 @@
 	"version": "2.0.3",
 	"description": "Generate a unique random ID string.",
 	"main": "index.js",
+	"homepage": "https://steve-232.github.io/generate-unique-id/",
 	"scripts": {
 		"console": "node -e 'console.log(require(\"./index\")())'",
 		"test": "jest",
