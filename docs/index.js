@@ -47,5 +47,7 @@ function generateUniqueId({
 
   availableChars = [...lettersArr, ...numbersArr, ...includeSymbols];
 
+  if (!availableChars.length) throw new Error('Cannot generate an ID: no available characters');
+  
   return createId(availableChars, length);
 }

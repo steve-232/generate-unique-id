@@ -59,4 +59,13 @@ describe('ID', () => {
 
     expect(id.match(/[0-5]/g)).toBe(null);
   });
+
+  it('should throw when no characters are available', () => {
+    expect(() =>
+      generateUniqueId({
+        useLetters: false,
+        useNumbers: false,
+      })
+    ).toThrow('Cannot generate an ID: no available characters');
+  });
 });
